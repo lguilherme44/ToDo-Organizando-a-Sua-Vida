@@ -5,7 +5,7 @@ export const Container = styled.div`
   width: 100%;
   height: 70px;
   background: #0d0d0d;
-  border-bottom: 5px solid #7159c1;
+  border-bottom: 2.5px solid #7159c1;
 `;
 
 export const LeftSide = styled.div`
@@ -28,7 +28,15 @@ export const RightSide = styled.div`
   align-items: center;
   justify-content: flex-end;
 
-  a {
+  button {
+    background: none;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+  }
+
+  a,
+  button {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -66,5 +74,9 @@ export const RightSide = styled.div`
     margin: 0 10px;
     color: #f5f5f5;
     opacity: 0.5;
+  }
+
+  button {
+    font-size: 16px;
   }
 `;
